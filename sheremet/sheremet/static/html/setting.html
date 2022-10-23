@@ -1,0 +1,48 @@
+{% extends "html/template/index.html" %}
+{% load static %}
+
+{% block title %} Настройки {% endblock %}
+{% block ConnectFile %}
+    <script src="{% static 'js/ajax.js' %}"></script>
+    <script src="{% static 'js/setting.js' %}"></script>
+    <link rel="stylesheet" href="{% static "css/setting.css" %} ">
+{% endblock %}
+
+{% block content %}
+    <script>
+        {% if curFloor %}
+            curFloor = {{ curFloor }};
+        {% endif %}
+        {% if curBuilding %}
+            curFloor = {{ curBuilding }};
+        {% endif %}
+    </script>
+
+    <div class="setting-head">
+        <nav class="nav-setting">
+            <ul class="menu-setting">
+                <li class="el-menu-setting" onclick="setting1()"> <a>Планировка</a> </li>
+                <li class="el-menu-setting" onclick="setting2()"> <a>Интерфейс</a> </li>
+                <li class="el-menu-setting" onclick="setting3()"> <a>Устройства</a> </li>
+                <li class="el-menu-setting" onclick="setting4()"> <a>Пользователи</a> </li>
+				<li class="el-menu-setting" onclick="setting5()"> <a>Общее</a> </li>
+            </ul>
+        </nav>
+
+        <div class="setting-time">
+            <span id = "time-hours">   </span>
+            <span id = "time-point">  </span>
+            <span id = "time-minuts"> </span>
+        </div>
+    </div>
+
+    <div class="wind-setting">
+
+    </div>
+
+    <script>
+        setting{{ num }}();
+        let timerId1 = setInterval(getTime, 3000);
+        let timerId2 = setInterval(TimeBlink, 1000);
+    </script>
+{% endblock %}

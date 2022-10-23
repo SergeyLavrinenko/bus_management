@@ -1,0 +1,57 @@
+{% load static %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %} Index {% endblock %}</title>
+</head>
+<body>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+  <filter id="blur">
+  <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+  </filter>
+</svg>
+
+    <script src='{% static "js/index.js" %}'></script>
+    <link rel="stylesheet" href='{% static "css/index.css" %}'>
+    <link rel="stylesheet" href='{% static "css/custom.css" %} '>
+    {% block ConnectFile %}{% endblock %}
+
+    <script> var host = "{{ host }} ";</script>
+	
+    <div class="index-head">
+        <div class="main-time">
+            <span id = "time-hours">   </span>
+            <span id = "time-point">  </span>
+            <span id = "time-minuts"> </span>
+        </div>
+		<div class="exit-cont" onclick="return location.href = '{% url 'logout'  %}'">
+			<img width="30px" class="exit-icon" src='{% static "img/exit.png" %}'>
+			<div class="exit-text"> Выйти </div>
+		</div>
+
+    </div>
+	
+    <div class="main">
+        <div class="menu">
+            <a  class="menu-btn" onclick="menuBtn()">
+                <img src='{% static "img/menu.png" %}'>
+            </a>
+            <nav class="menu-list">
+                <a href=""> <img width="100px" class="menu-el" src='{% static "img/home.png" %}'> </a>
+                <a href=""> <img width="100px" class="menu-el" src='{% static "img/setting.png" %}'></a>
+
+            </nav>
+        </div>
+        <div class="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+</body>
+</html>

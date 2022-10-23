@@ -1,0 +1,51 @@
+.table-page{
+    height: 100vh;
+    margin: auto;
+}
+.center{
+    text-align: center;
+    font-weight: bolder;
+}
+#message{
+    font-size: 17px;
+    height: 20px;
+}
+.main{
+    vertical-align: middle;
+    margin: auto;
+    padding: 20px 40px 0 40px;
+    border-radius: 30px;
+    background: #D9D9D9;
+    width: 350px;
+    color: #000;
+    font-size: 33px;
+}
+input[type='text'], input[type='password']{
+    font-size: 29px;
+
+    width: 95%;
+    border-width: 0px 0px 2px 0px;
+    background-color: rgba(255, 255, 255, 0.1 );
+    border-color: white;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    font-size: 29px;
+    color: white;
+    background: #FF801B;
+    border-radius: 20px;
+    padding: 2px;
+    width: 65%;
+    border-color: #DD6011;
+    border-width: 4px;
+}
+.name-field{
+    padding: 0px 10px;
+}
+.submit-but{
+    text-align: center;
+    padding: 20px;
+}
+body{
+    font: "curier new";
+}

@@ -1,0 +1,44 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="{% static "css/auth.css" %} ">
+    <title>Авторизация</title>
+</head>
+
+<body>
+<table class="table-page">
+    <tr><td>
+    <div class="main">
+        <form method="post" action="{% url 'auther'%}">
+            {% csrf_token %}
+            <table class="main-table">
+                <tr class="center">
+                    <td colspan="2">Авторизация</td>
+                </tr>
+                <tr class="center" id="message">
+                    <td colspan="2">{{ mess }}</td>
+                </tr>
+                <tr>
+                    <td class="name-field"> Логин </td>
+                    <td class="field"> <input type="text" name="login"></td>
+                </tr>
+
+                <tr>
+                    <td class="name-field"> Пароль </td>
+                    <td class="field"> <input type="password" name="pass"></td>
+                </tr>
+
+                <tr>
+                    <td class="submit-but" colspan="2"> <input type="submit" value="Войти"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </td></tr>
+</table>
+
+</body>
+</html>

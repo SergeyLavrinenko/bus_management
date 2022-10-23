@@ -1,0 +1,51 @@
+{% extends "html/template/index.html" %}
+{% load static %}
+
+{% block title %} Главная {% endblock %}
+
+{% block ConnectFile %}
+    <script src="{% static 'js/ajax.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static "css/driver.css" %} ">
+{% endblock %}
+
+{% block content %}
+    <div class="main-content">
+        {% for task in tasks %}
+            {% if forloop.counter0 == 0 %}
+                <div class="main_task">
+                    <table class="head_table">
+                        <tr>
+                            <td class="head_point"> {{task.point_from}} <br><span class="name_point"> Точка отправления </span> </td>
+                            <td class="head_point"> {{task.point_to}} <br><span class="name_point"> Точка назначения </span> </td>
+                        </tr>
+                        <tr>
+                            <td class="head_time"> {{task.time_from}} </td>
+                            <td class="head_time"> {{task.time_to}} </td>
+                        </tr>
+                    </table>
+                </div>
+            {% else %}
+                <div class="next_task">
+                    <table class="second_table">
+                        <tr>
+                            <td class="second_point"> {{task.point_from}} <br><span class="name_point_s"> Точка отправления </span> </td>
+                            <td class="second_point"> {{task.point_to}} <br><span class="name_point_s"> Точка назначения </span></td>
+                        </tr>
+                        <tr>
+                            <td class="second_time"> {{task.time_from}} </td>
+                            <td class="second_time"> {{task.time_to}} </td>
+                        </tr>
+                    </table>
+                <hr>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+
+    </div>
+    <script>
+        let timerId1 = setInterval(GetData, 1500);
+        let timerId2 = setInterval(TimeBlink, 1000);
+    </script>
+{% endblock %}

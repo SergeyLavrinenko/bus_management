@@ -1,0 +1,87 @@
+body{
+ background-image: url("/media/bg/fon.bmp"); 
+}
+.content-background{
+ background: rgba(178,73,76, 0.4); 
+}
+.menu-btn{
+ background: #dd9711;
+}
+.menu{
+ background: #b23231; 
+}
+.main-head{
+ background: #ed3338; 
+}
+.main-head{
+ border: 7px outset #ed3338;   
+}
+.setting2-content{
+ background: #ed3338; 
+}
+.info{
+ background: #b23231; 
+}
+.info-content{
+ background: #ed3338; 
+}
+.el-menu-setting{
+ background: #b23231; 
+}
+.el-menu-setting:hover{
+ background: rgba(178,50,49, 0.3); 
+}
+.setting-head{
+ background: #ed3338; 
+}
+.setting-head{
+ border: 7px outset #ed3338;   
+}
+.left-block1{
+ background: #ed3338; 
+}
+.right-block1{
+ background: #ed3338; 
+}
+.el-menu-select-floor, .el-menu-select-device, .el-menu-select-floor-add, .el-menu-select-user{
+ background: #b23231; 
+}
+.el-menu-select-floor:hover, .el-menu-select-device:hover, .el-menu-select-user:hover{
+ background: #888888; 
+}
+.el-menu-select-floor:active, .el-menu-select-device:active,.el-menu-select-user:active{
+ background: #FFFFFF; 
+}
+.el-menu-select-floor-add, .el-menu-select-user-add{
+ background: #FFFFFF; 
+}
+.el-menu-select-floor-add:hover, .el-menu-select-user-add:hover{
+ background: #888888; 
+}
+.el-menu-select-floor-add:active, .el-menu-select-user-add:active{
+ background: #AAAAAA; 
+}
+.select-device-table{
+ background: #b23231; 
+}
+.user-access{
+ background: #b23231; 
+}
+.add-img, .select-bg-color, .select-bg-img{
+ background: #b23231; 
+}
+.sub-main-content{
+ background: rgba(237,51,56, 0.96); 
+}
+.head-fullview{
+ background: #ed3338; 
+}
+.up-div, .down-div{
+ background: rgba(178,50,49, 0.80); 
+}
+.period{
+ background: rgba(178,50,49, 0.80); 
+}
+body{
+ color: #000000;
+}

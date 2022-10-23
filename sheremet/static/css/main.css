@@ -1,0 +1,115 @@
+.plan-box{
+    width: 850px;
+    margin: auto;
+    border: 5px solid #000000;
+    margin-bottom: 20px;
+}
+.main-head{
+    position: relative;
+    height: 130px;
+    margin: 10px 10px 20px 10px;
+    top: 10px;
+    box-shadow: 0px 0px 60px -10px rgba(0, 0, 0, 0.5) inset;
+}
+.main-select{
+    font-size: 20px;
+    padding: 0px 45px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 130px;
+}
+.main-select select{
+	font-size: 30px;
+	box-shadow:  inset 0px 1px 7px -3px rgba(0, 0, 0, 0.63);/* 0 1px 0 1px rgba(0,0,0,.09); */
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' fill-rule='evenodd' class='cls-1' d='M8,0L4.141,6.993,0.012,0.156Z'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+	background-position: right 13px center;
+	padding-right: 30px;
+	appearance: none !important;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+	border: 0px;
+}
+.main-time{
+    position: absolute;
+    float: right;
+    font-size: 45px;
+    padding: 0px 0px 20px 20px;
+    top: 0px;
+    right: 175px;
+    text-align: center;
+}
+#time-hours{
+    float: left;
+}
+#time-minuts{
+    float: right;
+}
+#time-point{
+    display: inline-block;
+    width: 30px;
+}
+.info {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 98;
+    width: 25%;
+    min-width: 350px;
+    height: 100vh;
+    display: flex;
+    /*align-items: center;
+    justify-content: center;*/
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+.info-active{
+    transform: translateX(0%);
+}
+.close-info {
+    width: 31px;
+    height: 31px;
+    background-color: #b60004;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 1px 1px 1px 1px;
+    transition: 0.5s;
+}
+.close-info img{
+	padding: 3px
+}
+.info-table{
+    font-size: 35px;
+}
+.state-main{
+    font-size: 20px;
+}
+#status{
+    width: 100%;
+    text-align: right;
+}
+.state-sub{
+    font-size: 12px;
+    color: #808080;
+}
+.info-content{
+    padding: 0px 20px 20px 20px;
+    margin: 70px 20px 20px 20px;
+    width: calc(100% - 40px);
+    height: auto;
+    border: 5px ridge #000;
+    overflow-y: auto;
+    box-shadow: 0px 0px 60px -10px rgba(0, 0, 0, 0.5) inset;
+}
+#name-device{
+    font-size:  35px;
+    text-align: center;
+}
+td{
+    text-align: center;
+    /*background: #fff;*/
+    height: 150px;
+}

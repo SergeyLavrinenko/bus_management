@@ -1,0 +1,65 @@
+.main-time{
+    position: absolute;
+    float: right;
+    font-size: 45px;
+    padding: 0px 0px 20px 20px;
+    top: 0px;
+    right: 175px;
+    text-align: center;
+}
+#time-hours{
+    float: left;
+}
+#time-minuts{
+    float: right;
+}
+#time-point{
+    display: inline-block;
+    width: 30px;
+}
+.main_task{
+    background: #aaa;
+}
+.next_task{
+    background: #777;
+}
+.head_table{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+.second_table{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+.head_point{
+    font-size: 45px ;
+    text-align: center;
+    padding: 10px;
+}
+.name_point{
+    font-size: 20px ;
+}
+.head_time{
+    font-size: 30px ;
+}
+.second_point{
+    font-size: 25px ;
+    text-align: center;
+    padding: 10px;
+}
+.second_time{
+    font-size: 20px ;
+}
+.name_point_s{
+    font-size: 10px ;
+}
+td{
+    text-align: center;
+    /*background: #fff;*/
+}
+hr{
+    margin: 0px;
+    padding: 5px;
+}
