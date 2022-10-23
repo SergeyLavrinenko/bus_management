@@ -1,3 +1,12 @@
 # bus_management
-## Для запуска программы bus_management Вам необходимо наличие компилятора Python 3.7 и framework Django, а также ОС Windows XP и младше
-## Для просмотра и запуска алгоритма открыть папку main, найти файл views.py
+## Требования: наличие Python3
+## Алгоритма создания заданий для водителей расположен в main/views.py
+
+Установить необходимые пакеты:
+pip3 install django
+pip3 intall psycopg2
+pip3 install django-cors-headers
+
+Установить postgresql
+
+Выгрузка из БД находится в файле backup
